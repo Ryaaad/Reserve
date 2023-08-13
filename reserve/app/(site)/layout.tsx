@@ -1,10 +1,11 @@
 // import Header from '../components/shared/Header'
 // import Footer from '../components/shared/Footer'
-import  '../../styles/globals.css'
+import  '../styles/globals.css'
+import Navbar from '../components/shared/Navbar/Navbar'
 const ClientLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* <Header /> */}
+    <div>
+     <Navbar></Navbar>
       <main className="container flex-1">{children}</main>
       {/* <Footer /> */}
     </div>
